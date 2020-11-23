@@ -1,0 +1,39 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ ol.nostyle {
+    list-style-type: none;
+}
+ .timestamp{
+     font-size: 12px;
+     color: #9c9c9c;
+ }
+
+ .feed-item{
+     border-top-style: solid;
+
+     border-width: 1px;
+     border-color: #9c9c9c;
+
+ }
+ .fa-trash{
+     color: #B22222;
+ }
+
+     

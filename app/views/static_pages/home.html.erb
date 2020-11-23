@@ -1,0 +1,24 @@
+<% provide(:title, 'Home') %>
+<% if logged_in? %>
+    <div class="row">
+        <div class="col-3">
+            <section>
+                <%= render 'shared/user_info' %>
+            </section>
+            <section>
+                <%= render 'shared/micropost_form'%>
+            </section>
+        </div>
+        <!-- Microposts here -->
+        <div class="col-9">
+            <h3>Microposts Feed</h3>
+            <%= render 'shared/feed'%>
+        </div>
+    </div>
+<% else %>
+<!-- Not login to user... -->
+    <div class="content jumbotron">
+        <h1 class="text-center"><strong>Awesome Blog</strong></h1>
+        <p class="text-center">Welcome to Awesome Blog!</p>
+    </div>
+<% end %>
